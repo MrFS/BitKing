@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMainLvl.resx">
+      <DependentUpon>frmMainLvl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,6 +84,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\BitKingSprite\bitking.png" />
+    <Content Include="Resources\BitKingSprite\bitkingIdleLeft.png" />
+    <Content Include="Resources\BitKingSprite\bitkingIdleRight.png" />
+    <Content Include="Resources\BitKingSprite\bitkingLeft.png" />
+    <Content Include="Resources\cloud1.png" />
+    <Content Include="Resources\cloud2.png" />
+    <Content Include="Resources\cloud3.png" />
+    <Content Include="Resources\dirt.png" />
+    <Content Include="Resources\fire.png" />
+    <Content Include="Resources\fjell1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
