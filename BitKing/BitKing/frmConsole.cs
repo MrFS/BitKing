@@ -40,6 +40,7 @@ namespace BitKing
             
             listBox1.Items.Clear();
             listBox1.Items.Add("BitKing Console - " + this.ProductVersion + " | " + this.ProductName + " | " + this.Name);
+            
             listBox1.Items.Add(getCPU());
             listBox1.Items.Add(getRAM());
             
@@ -53,8 +54,55 @@ namespace BitKing
 
         public string getRAM()
         {
-            return "RAM: " + ramCounter.NextValue() + "GB";
+            return "RAM: " + ramCounter.NextValue() / 1024 + "B";
         }
 
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    txtConsole.CharacterCasing = CharacterCasing.Lower;
+                    if (txtConsole.Text == "exit")
+                    {
+                        Application.Exit();
+                    }
+
+                    if (txtConsole.Text == "tmrpaus")
+                    {
+                        tmrDebug.Enabled = false;
+
+                        txtConsole.Clear();
+                    }
+
+                    if (txtConsole.Text == "tmrunp")
+                    {
+                        tmrDebug.Enabled = true;
+
+                        txtConsole.Clear();
+                    }
+
+                    if (txtConsole.Text == "clear")
+                    {
+                        listBox1.Items.Clear();
+
+                        txtConsole.Clear();
+                    }
+
+                    if (txtConsole.Text == "help")
+                    {
+                        listBox1.Items.Clear();
+                        listBox1.Items.Add("BitKing Console - " + this.ProductVersion + " | " + this.ProductName + " | " + this.Name);
+                        listBox1.Items.Add("Available console commands:");
+                        listBox1.Items.Add("-- List Of CMDs --");
+
+                        txtConsole.Clear();
+                    }
+
+
+
+                    break;
+            }
+        }
     }
 }
