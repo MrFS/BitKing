@@ -29,5 +29,17 @@ namespace BitKing
             frmConsole frm = new frmConsole();
             frm.Show();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAbout frm = new frmAbout();
+            frm.Show();
+        }
+
+        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmHelp frm = new frmHelp();
+            frm.Show();
+        }
     }
 }

@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsole.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmConsole.Designer.cs">
       <DependentUpon>frmConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLauncher.cs">
       <SubType>Form</SubType>
@@ -66,8 +78,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsole.resx">
       <DependentUpon>frmConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLauncher.resx">
       <DependentUpon>frmLauncher.cs</DependentUpon>
