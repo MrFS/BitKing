@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsole.Designer.cs">
+      <DependentUpon>frmConsole.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLauncher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsole.resx">
+      <DependentUpon>frmConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLauncher.resx">
+      <DependentUpon>frmLauncher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMainLvl.resx">
       <DependentUpon>frmMainLvl.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,7 +98,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\BitKingSprite\bitking.png" />
     <Content Include="Resources\BitKingSprite\bitkingIdleLeft.png" />
@@ -97,6 +112,7 @@
     <Content Include="Resources\dirt.png" />
     <Content Include="Resources\fire.png" />
     <Content Include="Resources\fjell1.png" />
+    <None Include="Resources\frmLauncer\bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
