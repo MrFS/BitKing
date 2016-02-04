@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BitKing
 {
-    public partial class Form1 : Form
+    public partial class frmLauncher : Form
     {
-        public Form1()
+        public frmLauncher()
         {
             InitializeComponent();
         }
