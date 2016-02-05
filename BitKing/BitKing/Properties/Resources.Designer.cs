@@ -73,9 +73,9 @@ namespace BitKing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fjell1 {
+        internal static System.Drawing.Bitmap Menyknapp {
             get {
-                object obj = ResourceManager.GetObject("fjell1", resourceCulture);
+                object obj = ResourceManager.GetObject("Menyknapp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -130,6 +130,8 @@
     <Content Include="Resources\dirt.png" />
     <Content Include="Resources\fire.png" />
     <Content Include="Resources\fjell1.png" />
+    <Content Include="Resources\Menyknapp.png" />
+    <None Include="Resources\Menyknapp1.png" />
     <None Include="Resources\frmLauncer\bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
