@@ -65,5 +65,14 @@ namespace BitKing
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void tmrClouds_Tick(object sender, EventArgs e)
+        {
+            pbCloud1.Left += 1;
+            pbCloud2.Left += 1;
+            pbCloud3.Left += 1;
+            pbCloud4.Left += 1;
+            pbCloud5.Left += 1;
+        }
     }
 }

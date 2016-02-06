@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -124,6 +125,8 @@
     <Content Include="Resources\BitKingSprite\bitkingIdleLeft.png" />
     <Content Include="Resources\BitKingSprite\bitkingIdleRight.png" />
     <Content Include="Resources\BitKingSprite\bitkingLeft.png" />
+    <None Include="Resources\bitkingtest.png" />
+    <None Include="Resources\bottom.png" />
     <Content Include="Resources\cloud1.png" />
     <Content Include="Resources\cloud2.png" />
     <Content Include="Resources\cloud3.png" />
