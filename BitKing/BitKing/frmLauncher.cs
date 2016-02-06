@@ -68,11 +68,15 @@ namespace BitKing
 
         private void tmrClouds_Tick(object sender, EventArgs e)
         {
-            pbCloud1.Left += 1;
-            pbCloud2.Left += 1;
-            pbCloud3.Left += 1;
-            pbCloud4.Left += 1;
-            pbCloud5.Left += 1;
+            PictureBox[] clouds =
+            {
+                pbCloud1,
+                pbCloud2,
+                pbCloud3,
+                pbCloud4,
+                pbCloud5
+            };
+            
         }
     }
 }

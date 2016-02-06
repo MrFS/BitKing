@@ -207,9 +207,9 @@
             this.pbCloud5.BackColor = System.Drawing.Color.Transparent;
             this.pbCloud5.BackgroundImage = global::BitKing.Properties.Resources.cloud2;
             this.pbCloud5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbCloud5.Location = new System.Drawing.Point(216, 106);
+            this.pbCloud5.Location = new System.Drawing.Point(524, 52);
             this.pbCloud5.Name = "pbCloud5";
-            this.pbCloud5.Size = new System.Drawing.Size(187, 48);
+            this.pbCloud5.Size = new System.Drawing.Size(35, 15);
             this.pbCloud5.TabIndex = 8;
             this.pbCloud5.TabStop = false;
             // 
@@ -227,6 +227,7 @@
             this.Controls.Add(this.pbPass);
             this.Controls.Add(this.pbUser);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;

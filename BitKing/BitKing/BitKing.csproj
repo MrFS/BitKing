@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\config.cs" />
+    <Compile Include="Classes\db\config.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\db\config.Designer.cs">
+      <DependentUpon>config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\db\connect.cs" />
+    <Compile Include="Classes\game\console.cs" />
+    <Compile Include="Classes\game\graphical.cs" />
+    <Compile Include="Classes\game\movement.cs" />
+    <Compile Include="Classes\user\user.cs" />
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +129,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\BitKingSprite\bitking.png" />
     <Content Include="Resources\BitKingSprite\bitkingIdleLeft.png" />
@@ -130,6 +140,7 @@
     <Content Include="Resources\cloud1.png" />
     <Content Include="Resources\cloud2.png" />
     <Content Include="Resources\cloud3.png" />
+    <Content Include="Resources\cursor\bitking_cur.cur" />
     <Content Include="Resources\dirt.png" />
     <Content Include="Resources\fire.png" />
     <Content Include="Resources\fjell1.png" />
