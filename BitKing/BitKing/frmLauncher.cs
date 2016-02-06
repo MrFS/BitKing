@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace BitKing
 {
     public partial class frmLauncher : Form
@@ -68,15 +70,26 @@ namespace BitKing
 
         private void tmrClouds_Tick(object sender, EventArgs e)
         {
-            PictureBox[] clouds =
+            bool cloud1Move = true;
+
+            switch (cloud1Move)
             {
-                pbCloud1,
-                pbCloud2,
-                pbCloud3,
-                pbCloud4,
-                pbCloud5
-            };
-            
+                case true:
+                    pbCloud1.Left += 2;
+
+                    if (pbCloud1.Location.X >= 200)
+                        cloud1Move = false;
+
+                    break;
+                case false:
+                    pbCloud1.Left -= 2;
+
+                    if (pbCloud1.Location.X <= 0)
+                        cloud1Move = true;
+
+                    break;
+            }
+
         }
     }
 }

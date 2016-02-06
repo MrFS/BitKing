@@ -188,7 +188,6 @@
             // tmrClouds
             // 
             this.tmrClouds.Enabled = true;
-            this.tmrClouds.Interval = 500;
             this.tmrClouds.Tick += new System.EventHandler(this.tmrClouds_Tick);
             // 
             // pbCloud4
