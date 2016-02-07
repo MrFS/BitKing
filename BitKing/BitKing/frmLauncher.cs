@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+
 
 namespace BitKing
 {
@@ -39,6 +40,8 @@ namespace BitKing
         {
             this.Text = "Bitking Launcher";
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            
 
         }
 
