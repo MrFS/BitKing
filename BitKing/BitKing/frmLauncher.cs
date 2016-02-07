@@ -19,6 +19,8 @@ namespace BitKing
             InitializeComponent();
         }
 
+        bool cloud1Move = true;
+
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -70,21 +72,20 @@ namespace BitKing
 
         private void tmrClouds_Tick(object sender, EventArgs e)
         {
-            bool cloud1Move = true;
 
             switch (cloud1Move)
             {
                 case true:
                     pbCloud1.Left += 2;
 
-                    if (pbCloud1.Location.X >= 200)
+                    if (pbCloud1.Bounds.IntersectsWith(rBound.Bounds))
                         cloud1Move = false;
 
                     break;
                 case false:
                     pbCloud1.Left -= 2;
 
-                    if (pbCloud1.Location.X <= 0)
+                    if (pbCloud1.Bounds.IntersectsWith(lBound.Bounds))
                         cloud1Move = true;
 
                     break;

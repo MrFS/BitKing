@@ -39,6 +39,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.continueWithoutLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbUser = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,9 @@
             this.pbCloud4 = new System.Windows.Forms.PictureBox();
             this.pbCloud5 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lBound = new System.Windows.Forms.PictureBox();
+            this.rBound = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
@@ -59,6 +62,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lBound)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rBound)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -146,6 +152,14 @@
             this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
             this.createUserToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
             this.createUserToolStripMenuItem.Text = "Create User";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem4.Enabled = false;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(20, 20);
+            this.toolStripMenuItem4.Text = "|";
             // 
             // toolStripMenuItem2
             // 
@@ -257,13 +271,36 @@
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // toolStripMenuItem4
+            // pictureBox1
             // 
-            this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem4.Enabled = false;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(20, 20);
-            this.toolStripMenuItem4.Text = "|";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BitKing.Properties.Resources.logo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(226, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 34);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lBound
+            // 
+            this.lBound.BackColor = System.Drawing.Color.Transparent;
+            this.lBound.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lBound.Location = new System.Drawing.Point(0, 24);
+            this.lBound.Name = "lBound";
+            this.lBound.Size = new System.Drawing.Size(10, 296);
+            this.lBound.TabIndex = 11;
+            this.lBound.TabStop = false;
+            // 
+            // rBound
+            // 
+            this.rBound.BackColor = System.Drawing.Color.Transparent;
+            this.rBound.Dock = System.Windows.Forms.DockStyle.Right;
+            this.rBound.Location = new System.Drawing.Point(590, 24);
+            this.rBound.Name = "rBound";
+            this.rBound.Size = new System.Drawing.Size(10, 296);
+            this.rBound.TabIndex = 12;
+            this.rBound.TabStop = false;
             // 
             // frmLauncher
             // 
@@ -271,6 +308,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BitKing.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(600, 320);
+            this.Controls.Add(this.rBound);
+            this.Controls.Add(this.lBound);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbCloud5);
             this.Controls.Add(this.pbCloud4);
@@ -299,6 +339,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lBound)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rBound)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,6 +371,9 @@
         private System.Windows.Forms.ToolStripMenuItem continueWithoutLoginToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox lBound;
+        private System.Windows.Forms.PictureBox rBound;
     }
 }
 
