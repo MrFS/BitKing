@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\config.cs" />
+    <Compile Include="Classes\controls\TransparentTxtBx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\controls\TransparentTxtBx.Designer.cs">
+      <DependentUpon>TransparentTxtBx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\db\config.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,11 +89,35 @@
     <Compile Include="frmLauncher.Designer.cs">
       <DependentUpon>frmLauncher.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMainLvl.cs">
+    <Compile Include="Levels\frmBergen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMainLvl.Designer.cs">
-      <DependentUpon>frmMainLvl.cs</DependentUpon>
+    <Compile Include="Levels\frmBergen.Designer.cs">
+      <DependentUpon>frmBergen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\frmMainLvls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\frmMainLvls.Designer.cs">
+      <DependentUpon>frmMainLvls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\frmOslo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\frmOslo.Designer.cs">
+      <DependentUpon>frmOslo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\frmStavanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\frmStavanger.Designer.cs">
+      <DependentUpon>frmStavanger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\frmTrondheim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels\frmTrondheim.Designer.cs">
+      <DependentUpon>frmTrondheim.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,8 +133,8 @@
     <EmbeddedResource Include="frmLauncher.resx">
       <DependentUpon>frmLauncher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainLvl.resx">
-      <DependentUpon>frmMainLvl.cs</DependentUpon>
+    <EmbeddedResource Include="Levels\frmMainLvls.resx">
+      <DependentUpon>frmMainLvls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

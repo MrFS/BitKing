@@ -33,11 +33,14 @@
             this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.continueWithoutLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.pbPass = new System.Windows.Forms.PictureBox();
             this.pbCloud1 = new System.Windows.Forms.PictureBox();
@@ -46,11 +49,8 @@
             this.tmrClouds = new System.Windows.Forms.Timer(this.components);
             this.pbCloud4 = new System.Windows.Forms.PictureBox();
             this.pbCloud5 = new System.Windows.Forms.PictureBox();
-            this.createUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.continueWithoutLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
@@ -71,7 +71,7 @@
             this.helpToolStripMenuItem,
             this.fileToolStripMenuItem,
             this.createUserToolStripMenuItem,
-            this.toolStripMenuItem3,
+            this.toolStripMenuItem4,
             this.toolStripMenuItem2,
             this.continueWithoutLoginToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -92,7 +92,7 @@
             // 
             this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(25, 20);
             this.toolStripMenuItem1.Text = "_";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -101,15 +101,9 @@
             this.consoleToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.consoleToolStripMenuItem.Name = "consoleToolStripMenuItem";
             this.consoleToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.consoleToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.consoleToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.consoleToolStripMenuItem.Text = "Console";
             this.consoleToolStripMenuItem.Click += new System.EventHandler(this.consoleToolStripMenuItem_Click);
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.fileToolStripMenuItem.Text = "Fil&e";
             // 
             // helpToolStripMenuItem
             // 
@@ -125,21 +119,46 @@
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.helpToolStripMenuItem1.Text = "Help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "Ab&out Bit&King";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.fileToolStripMenuItem.Text = "Fil&e";
+            // 
+            // createUserToolStripMenuItem
+            // 
+            this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
+            this.createUserToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.createUserToolStripMenuItem.Text = "Create User";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Enabled = false;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(20, 20);
+            this.toolStripMenuItem2.Text = "|";
+            // 
+            // continueWithoutLoginToolStripMenuItem
+            // 
+            this.continueWithoutLoginToolStripMenuItem.Name = "continueWithoutLoginToolStripMenuItem";
+            this.continueWithoutLoginToolStripMenuItem.Size = new System.Drawing.Size(201, 20);
+            this.continueWithoutLoginToolStripMenuItem.Text = "Continue without login";
             // 
             // pbUser
             // 
@@ -223,31 +242,6 @@
             this.pbCloud5.TabIndex = 8;
             this.pbCloud5.TabStop = false;
             // 
-            // createUserToolStripMenuItem
-            // 
-            this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
-            this.createUserToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
-            this.createUserToolStripMenuItem.Text = "Create User";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(20, 20);
-            this.toolStripMenuItem2.Text = "|";
-            // 
-            // continueWithoutLoginToolStripMenuItem
-            // 
-            this.continueWithoutLoginToolStripMenuItem.Name = "continueWithoutLoginToolStripMenuItem";
-            this.continueWithoutLoginToolStripMenuItem.Size = new System.Drawing.Size(201, 20);
-            this.continueWithoutLoginToolStripMenuItem.Text = "Continue without login";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(20, 20);
-            this.toolStripMenuItem3.Text = "|";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -256,12 +250,20 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("pixelmix", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(301, 206);
+            this.button1.Location = new System.Drawing.Point(301, 200);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem4.Enabled = false;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(20, 20);
+            this.toolStripMenuItem4.Text = "|";
             // 
             // frmLauncher
             // 
@@ -322,10 +324,10 @@
         private System.Windows.Forms.PictureBox pbCloud4;
         private System.Windows.Forms.PictureBox pbCloud5;
         private System.Windows.Forms.ToolStripMenuItem createUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem continueWithoutLoginToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
 

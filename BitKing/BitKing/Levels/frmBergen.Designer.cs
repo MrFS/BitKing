@@ -1,6 +1,6 @@
-﻿namespace BitKing
+﻿namespace BitKing.Levels
 {
-    partial class frmMainLvl
+    partial class frmBergen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmMainLvl
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 474);
-            this.Name = "frmMainLvl";
-            this.Text = "frmMainLvl";
-            this.ResumeLayout(false);
-
+            this.Text = "frmBergen";
         }
 
         #endregion

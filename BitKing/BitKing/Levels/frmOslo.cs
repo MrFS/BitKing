@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BitKing
+namespace BitKing.Levels
 {
-    public partial class frmMainLvl : Form
+    public partial class frmOslo : Form
     {
-        public frmMainLvl()
+        public frmOslo()
         {
             InitializeComponent();
         }
