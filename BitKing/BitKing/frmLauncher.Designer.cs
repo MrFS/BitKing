@@ -46,6 +46,11 @@
             this.tmrClouds = new System.Windows.Forms.Timer(this.components);
             this.pbCloud4 = new System.Windows.Forms.PictureBox();
             this.pbCloud5 = new System.Windows.Forms.PictureBox();
+            this.createUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.continueWithoutLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
@@ -58,12 +63,17 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("pixelmix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.xToolStripMenuItem,
             this.toolStripMenuItem1,
             this.consoleToolStripMenuItem,
+            this.helpToolStripMenuItem,
             this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.createUserToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem2,
+            this.continueWithoutLoginToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(600, 24);
@@ -98,17 +108,18 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.fileToolStripMenuItem.Text = "Fil&e";
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem1,
             this.toolStripSeparator1,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.helpToolStripMenuItem.Text = "He&lp";
             // 
             // helpToolStripMenuItem1
@@ -135,7 +146,7 @@
             this.pbUser.BackColor = System.Drawing.Color.Transparent;
             this.pbUser.BackgroundImage = global::BitKing.Properties.Resources.Menyknapp;
             this.pbUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbUser.Location = new System.Drawing.Point(238, 160);
+            this.pbUser.Location = new System.Drawing.Point(226, 137);
             this.pbUser.Name = "pbUser";
             this.pbUser.Size = new System.Drawing.Size(150, 31);
             this.pbUser.TabIndex = 2;
@@ -146,7 +157,7 @@
             this.pbPass.BackColor = System.Drawing.Color.Transparent;
             this.pbPass.BackgroundImage = global::BitKing.Properties.Resources.Menyknapp;
             this.pbPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbPass.Location = new System.Drawing.Point(238, 197);
+            this.pbPass.Location = new System.Drawing.Point(226, 174);
             this.pbPass.Name = "pbPass";
             this.pbPass.Size = new System.Drawing.Size(150, 31);
             this.pbPass.TabIndex = 3;
@@ -212,12 +223,53 @@
             this.pbCloud5.TabIndex = 8;
             this.pbCloud5.TabStop = false;
             // 
+            // createUserToolStripMenuItem
+            // 
+            this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
+            this.createUserToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.createUserToolStripMenuItem.Text = "Create User";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(20, 20);
+            this.toolStripMenuItem2.Text = "|";
+            // 
+            // continueWithoutLoginToolStripMenuItem
+            // 
+            this.continueWithoutLoginToolStripMenuItem.Name = "continueWithoutLoginToolStripMenuItem";
+            this.continueWithoutLoginToolStripMenuItem.Size = new System.Drawing.Size(201, 20);
+            this.continueWithoutLoginToolStripMenuItem.Text = "Continue without login";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(20, 20);
+            this.toolStripMenuItem3.Text = "|";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("pixelmix", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(301, 206);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frmLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BitKing.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(600, 320);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pbCloud5);
             this.Controls.Add(this.pbCloud4);
             this.Controls.Add(this.pbCloud2);
@@ -269,6 +321,11 @@
         private System.Windows.Forms.Timer tmrClouds;
         private System.Windows.Forms.PictureBox pbCloud4;
         private System.Windows.Forms.PictureBox pbCloud5;
+        private System.Windows.Forms.ToolStripMenuItem createUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem continueWithoutLoginToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 
