@@ -17,9 +17,23 @@ namespace BitKing
             InitializeComponent();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void checkedListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            // Ensure that we are checking an item
+            if (e.NewValue != CheckState.Checked)
+            {
+                return;
+            }
 
+            // Get the items that are selected
+            CheckedListBox.CheckedIndexCollection selectedItems = this.checkedListBox1.CheckedIndices;
+
+            // Check that we have at least 1 item selected
+            if (selectedItems.Count > 0)
+            {
+                // Uncheck the other item
+                this.checkedListBox1.SetItemChecked(selectedItems[0], false);
+            }
         }
     }
 }

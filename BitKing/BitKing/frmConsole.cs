@@ -99,6 +99,12 @@ namespace BitKing
                         txtConsole.Clear();
                     }
 
+                    if (txtConsole.Text == "lvlmain")
+                    {
+                        frmMainLvl frm = new frmMainLvl();
+                        frm.Show();
+                    }
+
 
 
                     break;
