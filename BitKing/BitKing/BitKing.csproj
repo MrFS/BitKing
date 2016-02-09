@@ -74,7 +74,7 @@
     <Compile Include="Classes\controls\TransparentTxtBx.Designer.cs">
       <DependentUpon>TransparentTxtBx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\db\connect.cs" />
+    <Compile Include="Classes\db\DBconnect.cs" />
     <Compile Include="Classes\game\console.cs" />
     <Compile Include="Classes\game\graphical.cs" />
     <Compile Include="Classes\game\movement.cs" />

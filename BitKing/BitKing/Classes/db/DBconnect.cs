@@ -14,7 +14,7 @@ namespace BitKing.Classes
 
     //http://www.codeproject.com/Articles/43438/Connect-C-to-MySQL
 
-    class connect
+    class DBconnect
     {
         private MySqlConnection con;
 
@@ -28,7 +28,7 @@ namespace BitKing.Classes
         public string deleteString;
         public string selectString;
         //Constructor
-        public connect()
+        public DBconnect()
         {
             Initialize();
         }

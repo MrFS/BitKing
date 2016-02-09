@@ -9,17 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using MySql.Data.MySqlClient;
+using BitKing.Classes;
 
 
 namespace BitKing
 {
     public partial class frmLauncher : Form
     {
+       
         public frmLauncher()
         {
             InitializeComponent();
         }
 
+        
         bool cloud1Move = true;
 
         protected override void WndProc(ref Message m)
@@ -41,6 +44,8 @@ namespace BitKing
             this.Text = "Bitking Launcher";
             this.StartPosition = FormStartPosition.CenterScreen;
 
+            DBconnect con = new DBconnect();
+            
             
 
         }
